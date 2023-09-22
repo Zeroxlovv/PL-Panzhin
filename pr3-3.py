@@ -6,5 +6,5 @@ for i in a:
         b.append(i)
     else:
         c.append(i)
-print(b,' - чётные числа')
-print(c,' - нечётные числа')
+print(b,' - чётные цифры')
+print(c,' - нечётные цифры')
