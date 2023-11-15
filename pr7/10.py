@@ -8,14 +8,18 @@ def f(n):
         return k
     else:
         print("n не принадлежит отрезку [210;231]")
-a=input()
-b=input()
-c=input()
+a=input()#Цифры
+b=input()#Цифры
+c=input()#Цифры
 n=int(input())
 print(f(n))
 print('-----2-----')
 a=input('Введите предложение \n')
-a=a.split()
+def f1(n):
+    c=''.join(reversed(n))
+    return c
+'''a=a.split()
 a.reverse()
 f=" ".join(a)
-print(f)
+print(f)'''
+print(f1(a))
