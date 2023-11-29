@@ -3,10 +3,10 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
 from tkinter.ttk import Combobox
-from tkinter import filedialog
+from tkinter import filedialog
 window=Tk()
 window.title('Панжин Владислав Николаевич')
-window.geometry('1280x1024') #Размер окна
+window.geometry('800x600') #Размер окна
 tb=ttk.Notebook(window)#Вкладки
 t1=ttk.Frame(tb)
 t2=ttk.Frame(tb) 
@@ -66,15 +66,14 @@ def ch(): # читка с файла
     s=b.read()
     t3.insert(1.0,s)
     b.close()
-'''def ch1():
-    a = filedialog.askopenfilename( filetypes=(("Текст", "*.txt")))
+def ch1():
+    a = filedialog.askopenfilename( filetypes=(("TXT files", "*.txt"),("All files", "*.*")))
     b=open(a,'w')
     s=t3.get(1.0,END)
     b.write(s)
-    b.close()'''
+    b.close()
 bt2=Button(t3,text='Можно считать с файла',command=ch)
 bt2.grid( row=0,sticky=E)
-'''bt3=Button(t3,text='Записать файл',command=ch1)
+bt3=Button(t3,text='Записать файл',command=ch1)
 bt3.grid(column=1, row=0)
 
-'''
