@@ -60,7 +60,7 @@ bt1=Button(t2,text='Выбрать', command=f)
 bt1.grid(column=1,row=2)
 #Работа с текстом
 def ch(): # читка с файла
-    a = filedialog.askopenfilename(initialdir="D:\github\PL-Panzhin\pr11", title="Откройте текстовый файл", filetypes=(("Текст", "*.txt"),))
+    a = filedialog.askopenfilename(initialdir="D:\github\PL-Panzhin\pr11", title="Откройте текстовый файл")
 #initialdir - каталог, filetypes - указываем тип файла
     b=open(a,encoding="utf-8")
     s=b.read()
